@@ -1,0 +1,7 @@
+Piping <-mysample %>%
+  arrange(date) %>%
+  filter(spi1<80) %>%
+  rename(Index1 = spi1, Index2 = spi2) %>%
+  select(Index1, Index2, team1, team2) %>%
+  summary()%>%
+  print()
